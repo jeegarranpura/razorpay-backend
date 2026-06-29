@@ -18,7 +18,7 @@ app.get("/", (req, res, next) => {
 });
 
 sequelize
-  .sync({ force: true })
+  .sync({ force: false })
   .then(() => {
     console.log("Database & tables created!");
   })
